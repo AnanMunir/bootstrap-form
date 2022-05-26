@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bootstrap Intro</title>
+  </head>
+  <body>
+    <div class="container bg">
+      <h2 class="text-center text-dark mb-3">Bootstrap Form</h2>
+<!-- form start -->
+      <form class="row g-3">
+        <!-- email info -->
+        <div class="col-md-6">
+          <label for="in_email" class="form-label" requried>Email</label>
+          <input type="email" class="form-control" id="in_email">
+        </div>
+        <div class="col-md-6">
+          <label for="in_pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="in_pass">
+        </div>
+        <!-- email info -->
+        <!-- address info -->
+        <div class="col-6">
+          <label for="in_address1" class="form-label">Present Address</label>
+          <input type="text" class="form-control" id="in_address1" placeholder="street no 1234">
+        </div>
+        <div class="col-6">
+          <label for="in_address2" class="form-label">Permanent Address</label>
+          <input type="text" class="form-control" id="in_phone2" placeholder="street no 1234">
+        </div>
+        <!-- address info -->
+        <!-- phone num info -->
+        <div class="col-6">
+          <label for="in_phone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="in_phone" placeholder="+88">
+        </div>
+        <div class="col-6">
+          <label for="add_phone" class="form-label">Additional Phone Number</label>
+          <input type="text" class="form-control" id="add_phone" placeholder="+88">
+        </div>
+         <!-- phone num info -->
+        <div class="col-lg-5">
+          <label for="in_birth" class="form-label requried">Date of Birth</label>
+          <input type="date" class="form-control" id="in_birth">
+        </div>
+        <div class="col-lg-4">
+          <label for="in_currency" class="form-label">Select Currency</label>
+          <select id="in_currency" class="form-select">
+            <option selected>Select Currency</option>
+            <option>Dollar</option>
+            <option>Taka</option>
+            <option>Rupee</option>
+            <option>Pound</option>
+          </select>
+        </div>
+        <!-- file upload -->
+        <div class="col-lg-3">
+          <label for="up_file" class="form-label">Upload Files</label>
+          <input class="form-control" type="file" id="up_file">
+        </div>
+        <!-- submit -->
+        <div class="col text-center my-4 btn">
+          <button type="button" class="btn btn-outline-dark">Sign In</button>
+        </div>
+      </form>
+    </div>
+
+  <!-- personal form -->
+  <h2 class="text-center my-3">Personal Form</h2>
+  <div class="container my-5 bg_2">
+  <!-- name section -->
+    <form class="row g-4 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="f_name" class="form-label">First name</label>
+        <input type="text" class="form-control" id="f_name" value="James" required>
+        <div class="valid-feedback">
+          Looks Perfect.
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <label for="l_name" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="l_name" value="Ronaldo" required>
+        <div class="valid-feedback">
+          Looks Perfect.
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <label for="user_name" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control" id="user_name" aria-describedby="user_name" required>
+          <span class="input-group-text" id="user_name">@</span>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+    <!-- name section -->
+      <div class="col-lg-4">
+        <label for="validationCustom03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <label for="validationCustom04" class="form-label">District</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose..</option>
+          <option>Dhaka</option>
+          <option>Chittagong</option>
+          <option>Faridpur</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <label for="phn_num" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="phn_num" placeholder="+88" required>
+        <div class="invalid-feedback">
+          Phone Number
+        </div>
+        
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center mb-3">
+        <button class="btn btn-outline-info btn2" type="submit">Submit form</button>
+      </div>
+    </form>  
+  </div>
+<!-- form end -->
+<!-- utilities start -->
+  <div class="container">
+    <h2 class="text-center text-info">Utilities Part</h2>
+    <div class="shadow-none p-3 mb-3 bg-info rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-3 bg-dark rounded text-white">Small shadow</div>
+    <div class="shadow p-3 mb-3 bg-body rounded">Regular shadow</div>
+    <div class="shadow-lg p-3 mb-3 bg-danger rounded text-white">Larger shadow</div>
+<!-- utilities end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- js links -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
